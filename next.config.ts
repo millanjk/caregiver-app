@@ -21,6 +21,10 @@ const nextConfig: NextConfig = {
       { hostname: "images.pexels.com" },
     ],
   },
+  // Handle missing environment variables during build
+  env: {
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || '',
+  },
 };
 
 export default nextConfig;
