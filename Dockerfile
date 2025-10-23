@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-Set npm to use legacy peer deps
+# Set npm to use legacy peer deps
 RUN npm config set legacy-peer-deps true
 
 # Install all dependencies (including dev dependencies for build)
