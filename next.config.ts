@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
   },
   // Handle missing environment variables during build
   env: {
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || '',
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || 'pk_test_bmVhcmJ5LXNuYXBwZXItNDguY2xlcmsuYWNjb3VudHMuZGV2JA',
   },
 };
 
